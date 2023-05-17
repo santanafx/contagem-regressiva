@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 import './App.css';
 import { Counter } from './components/Counter';
 import { Title } from './components/Title';
 
-import newYear from './imgs/new-year.jpg'
+import newYear from './imgs/new-year.jpg';
 
 function App() {
 
@@ -39,7 +39,7 @@ function App() {
   }, [att])
 
   const attTime = () => {
-    setAtt(!att)
+    setAtt(!att);
   }
 
   setTimeout(attTime, 1000);
