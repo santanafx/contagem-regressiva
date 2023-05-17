@@ -36,12 +36,12 @@ function App() {
     setMinute(minuteNumber);
     setSecond(secondNumber);
 
-    console.log(dayNumber, hourNumber, minuteNumber, secondNumber)
   }, [att])
 
   const attTime = () => {
     setAtt(!att)
   }
+
   setTimeout(attTime, 1000);
 
   return (
