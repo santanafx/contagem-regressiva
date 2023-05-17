@@ -1,7 +1,12 @@
 import React from 'react'
 
-export const Counter = () => {
+export const Counter = ({ time, number }) => {
     return (
-        <div>Counter</div>
+        <div>
+            <span>{time}</span>
+            <div>
+                {number}
+            </div>
+        </div>
     )
 }

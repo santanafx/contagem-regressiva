@@ -5,11 +5,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.6;
+  opacity: 0.9;
 }
 
 .containerRelogio {
-  width: 400px;
-
+  width: 600px;
   background-color: var(--branco);
+  opacity: 0.9;
+  padding: 10px;
+  border-radius: 20px;
 }

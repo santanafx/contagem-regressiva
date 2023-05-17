@@ -8,12 +8,12 @@ function App() {
   return (
     <div className='App' style={{ backgroundImage: `url(${newYear})` }}>
       <div className='containerRelogio'>
-        <Title />
+        <Title title='Contagem Regressiva para 2024' />
         <div className='relogio'>
-          <Counter title='dias' />
-          <Counter title='horas' />
-          <Counter title='minutos' />
-          <Counter title='segundos' />
+          <Counter time='dias' number='2' />
+          <Counter time='horas' number='2' />
+          <Counter time='minutos' number='2' />
+          <Counter time='segundos' number='2' />
         </div>
       </div>
     </div>
