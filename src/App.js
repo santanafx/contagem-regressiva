@@ -14,7 +14,8 @@ function App() {
   const [minute, setMinute] = React.useState();
   const [second, setSecond] = React.useState();
 
-  const countDown = (date) => {
+  React.useEffect(() => {
+
     const countDate = new Date(date).getTime();
     const countDateNow = new Date().getTime();
 
@@ -30,16 +31,13 @@ function App() {
     const minuteNumber = Math.floor((countDateInterval % hour) / minute);
     const secondNumber = Math.floor((countDateInterval % minute) / second);
 
-
     setDay(dayNumber);
     setHour(hourNumber);
     setMinute(minuteNumber);
     setSecond(secondNumber);
 
     console.log(dayNumber, hourNumber, minuteNumber, secondNumber)
-  }
-
-  setInterval(countDown(date), 1000);
+  }, [second])
 
 
   return (
