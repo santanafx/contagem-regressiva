@@ -5,7 +5,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.9;
 }
 
 .containerRelogio {
@@ -14,6 +13,7 @@
   opacity: 0.9;
   padding: 10px;
   border-radius: 20px;
+  box-shadow: 1px 3px 8px rgb(0, 0, 0, 0.5);
 }
 
 .relogio {
