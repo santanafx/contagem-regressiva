@@ -13,9 +13,9 @@ function App() {
   const [hour, setHour] = React.useState();
   const [minute, setMinute] = React.useState();
   const [second, setSecond] = React.useState();
+  const [att, setAtt] = React.useState(true);
 
   React.useEffect(() => {
-
     const countDate = new Date(date).getTime();
     const countDateNow = new Date().getTime();
 
@@ -37,8 +37,12 @@ function App() {
     setSecond(secondNumber);
 
     console.log(dayNumber, hourNumber, minuteNumber, secondNumber)
-  }, [second])
+  }, [att])
 
+  const attTime = () => {
+    setAtt(!att)
+  }
+  setTimeout(attTime, 1000);
 
   return (
     <div className='App' style={{ backgroundImage: `url(${newYear})` }}>
