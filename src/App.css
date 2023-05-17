@@ -1,0 +1,15 @@
+.App {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.6;
+}
+
+.containerRelogio {
+  width: 400px;
+
+  background-color: var(--branco);
+}
