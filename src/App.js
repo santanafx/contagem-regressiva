@@ -3,8 +3,6 @@ import './App.css';
 import { Counter } from './components/Counter';
 import { Title } from './components/Title';
 
-import newYear from './imgs/new-year.jpg';
-
 function App() {
 
   const date = 'Jan 1, 2024 00:00:00';
