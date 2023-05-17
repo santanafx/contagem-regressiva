@@ -1,11 +1,11 @@
 import React from 'react'
-import './Counter.css'
+import styles from './Counter.module.css'
 
 export const Counter = ({ time, number }) => {
     return (
-        <div className='counterContainer'>
-            <span className='counterNumber'>{number}</span>
-            <div className='counterTime'>
+        <div className={styles.counterContainer}>
+            <span className={styles.counterNumber}>{number}</span>
+            <div className={styles.counterTime}>
                 {time}
             </div>
         </div>

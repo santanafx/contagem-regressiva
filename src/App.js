@@ -45,7 +45,7 @@ function App() {
   setTimeout(attTime, 1000);
 
   return (
-    <div className='App' style={{ backgroundImage: `url(${newYear})` }}>
+    <div className="App">
       <div className='containerRelogio'>
         <Title title='Contagem Regressiva para 2024' />
         <div className='relogio'>
